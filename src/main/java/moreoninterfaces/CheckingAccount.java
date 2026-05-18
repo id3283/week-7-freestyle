@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class CheckingAccount implements Account{
     ArrayList<Double> transactions = new ArrayList<Double>();
+
     private double balance = 0;
 
     public void deposit(double depositAmount) {
@@ -19,6 +20,10 @@ public class CheckingAccount implements Account{
 
     public ArrayList<Double> getTransactions() {
         return this.transactions;
+    }
+
+    public void writeCheck() {
+
     }
 
 }

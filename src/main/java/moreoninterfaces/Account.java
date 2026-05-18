@@ -1,6 +1,7 @@
 package moreoninterfaces;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public interface Account {
 
@@ -8,5 +9,5 @@ public interface Account {
 
     void withdraw(double amount);
 
-    ArrayList<Double> getTransactions();
+    List<Double> getTransactions();
 }
