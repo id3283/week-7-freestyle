@@ -19,4 +19,8 @@ public class SavingsAccount implements Account {
     public ArrayList<Double> getTransactions() {
         return null;
     }
+
+    public void deactivate() {
+
+    }
 }

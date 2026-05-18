@@ -1,17 +1,30 @@
 package moreoninterfaces;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
 public class BankingApp {
     public static void main(String[] args) {
         SavingsAccount savings = new SavingsAccount();
         savings.deposit(1000);
 
+        List<String> strings = new LinkedList<String>();
 
-        CheckingAccount checking = new CheckingAccount();
-        checking.writeCheck();
+        Account checking = new CheckingAccount();
 
         transfer(savings, checking, 100);
         transfer(checking, savings, 100);
 
+    }
+
+    public static int countList(List<String> strings) {
+        int count = 0;
+        for(String s : strings) {
+            count++;
+        }
+
+        return count;
     }
 
     public static void transfer(Account fromAccount, Account toAccount, double amount) {

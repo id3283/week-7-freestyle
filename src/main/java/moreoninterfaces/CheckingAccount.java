@@ -1,9 +1,11 @@
 package moreoninterfaces;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class CheckingAccount implements Account{
-    ArrayList<Double> transactions = new ArrayList<Double>();
+    List<Double> transactions = new ArrayList<Double>();
+
 
     private double balance = 0;
 
@@ -18,11 +20,14 @@ public class CheckingAccount implements Account{
         this.balance = this.balance - withdrawAmount;
     }
 
-    public ArrayList<Double> getTransactions() {
+    public List<Double> getTransactions() {
         return this.transactions;
     }
 
     public void writeCheck() {
+    }
+
+    public void deactivate() {
 
     }
 

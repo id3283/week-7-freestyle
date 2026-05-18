@@ -10,4 +10,7 @@ public interface Account {
     void withdraw(double amount);
 
     List<Double> getTransactions();
+
+    void deactivate();
+
 }
