@@ -7,8 +7,6 @@ public class Labeler {
 
     // 👇🏼this means I can use T as a type for a variable:
         T anotherValue = someObject;
-
-        System.out.println("The type of T is: " + someObject.getClass());
     }
 
     //         👇🏼 I can also use T as a return type

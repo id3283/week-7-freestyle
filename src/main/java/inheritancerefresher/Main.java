@@ -3,17 +3,18 @@ package inheritancerefresher;
 public class Main {
     public static void main(String[] args) {
 
-        printSomething(5);
+        String chrisName = "Chris";
 
-//        String chrisName = "Chris";
+        Person p = new Person("Chris", 25);
+
 //        Customer c = new Customer(chrisName);
 //
 //        System.out.println();
     }
 
-    public static void printSomething(int message) {
-        String anotherMessage = "Howdy";
+    public static void printSomething(String message) {
+        String whateverYouWant = "Howdy";
 
-        System.out.println(message);
+        System.out.println(whateverYouWant + " " + message);
     }
 }

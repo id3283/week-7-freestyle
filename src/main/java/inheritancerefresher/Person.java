@@ -1,13 +1,27 @@
 package inheritancerefresher;
 
 public class Person {
-    protected String name;
-    protected int age;
+    String name;
+    int age;
 
-    public Person(String name, int age) {
-        this.name = name;
-        this.age = age;
+    public Person(String nameParameter, int ageParameter) {
+        this.name = nameParameter;
+        this.age = ageParameter;
     }
 
+    public String getName() {
+        return name;
+    }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
 }
