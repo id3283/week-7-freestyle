@@ -9,6 +9,8 @@ public class BankingApp {
         SavingsAccount savings = new SavingsAccount();
         savings.deposit(1000);
 
+        Account anotherAccount = new CheckingAccount();
+
         List<String> strings = new LinkedList<String>();
 
         Account checking = new CheckingAccount();
@@ -29,12 +31,6 @@ public class BankingApp {
 
     public static void transfer(Account fromAccount, Account toAccount, double amount) {
         fromAccount.withdraw(amount);
-
-        if(fromAccount instanceof CheckingAccount) {
-            CheckingAccount checkingAccount = (CheckingAccount) fromAccount;
-            checkingAccount.writeCheck();
-        }
-
         toAccount.deposit(amount);
     }
 
@@ -42,14 +38,19 @@ public class BankingApp {
     public static void transfer(CheckingAccount checking, SavingsAccount savings, double amount) {
 
     }
+
     public static void transfer(SavingsAccount savings,CheckingAccount checking, double amount) {
 
     }
+
     public static void transfer(CheckingAccount checking1,CheckingAccount checking2, double amount) {
-
+        checking1.withdraw(amount);
+        checking2.deposit(amount);
     }
-     public static void transfer(SavingsAccount savings1, SavingsAccount savings2, double amount) {
 
+     public static void transfer(SavingsAccount savings1, SavingsAccount savings2, double amount) {
+        savings1.withdraw(amount);
+        savings2.deposit(amount);
     }
 
 }

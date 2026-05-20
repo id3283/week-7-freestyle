@@ -21,6 +21,12 @@ public class Main {
 
         double netWorth = 0;
         for(Valuable v: valuables) {
+
+            if(v instanceof Jewlry) {
+                Jewlry jewlry = (Jewlry) v;
+                jewlry.wear();
+            }
+
             netWorth += v.getValue();
         }
 

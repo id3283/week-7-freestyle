@@ -8,6 +8,9 @@ public class Jewlry extends FixedAsset{
     }
 
 
+    public void wear() {
+        System.out.println("Ooooh!  I look good in diamonds!");
+    }
 
 
 }

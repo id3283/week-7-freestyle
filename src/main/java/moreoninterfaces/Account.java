@@ -11,6 +11,5 @@ public interface Account {
 
     List<Double> getTransactions();
 
-    void deactivate();
 
 }

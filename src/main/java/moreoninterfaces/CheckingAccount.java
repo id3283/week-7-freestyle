@@ -7,6 +7,10 @@ public class CheckingAccount implements Account{
     List<Double> transactions = new ArrayList<Double>();
 
 
+    public void doSomeCheckingShizzle() {
+
+    }
+
     private double balance = 0;
 
     public void deposit(double depositAmount) {
