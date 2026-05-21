@@ -18,8 +18,8 @@ public class DuetWithoutGenerics {
     }
 
     public void perform() {
-// because T Is-A Musician we know that they
-// will have the perform method
+        // because T Is-A Musician we know that they
+        // will have the perform method
         left.play();
         right.play();
     }
